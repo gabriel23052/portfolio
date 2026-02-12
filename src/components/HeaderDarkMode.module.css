@@ -1,0 +1,43 @@
+.darkModeBtn {
+  padding: var(--sp8);
+  border-radius: 8px;
+  transition: background-color 300ms;
+  position: relative;
+  cursor: pointer;
+}
+.darkModeBtn:focus {
+  outline: 1px solid var(--bd-0);
+}
+.darkModeBtn:hover {
+  background-color: var(--inv-bg-2);
+}
+
+.darkModeBtn svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--inv-tx-2);
+  transition: 500ms translate;
+}
+
+body:global(.darkMode) .sun {
+  translate: 1rem -2.5rem;
+}
+
+.moon {
+  left: var(--sp8);
+  position: absolute;
+  translate: 1rem 2.5rem;
+}
+body:global(.darkMode) .moon {
+  translate: 0 0;
+}
+
+@media (max-width: 700px) {
+  .moon {
+    translate: 5rem 4rem;
+  }
+  body:global(.darkMode) .sun {
+    translate: -5rem 4rem;
+  }
+}
+

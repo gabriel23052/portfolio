@@ -59,6 +59,7 @@ button {
   border: none;
   background: none;
   outline: none;
+  line-height: 0;
 }
 
 h1,
@@ -124,6 +125,9 @@ html {
   --g-title: linear-gradient(to right, #292929, #1a1a1a);
 }
 
+body {
+  background-color: var(--bg-2);
+}
 body.darkMode {
   --bg-0: #292929;
   --bg-1: #212121;

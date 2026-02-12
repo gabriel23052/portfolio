@@ -1,0 +1,111 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  padding: var(--sp16);
+  align-items: start;
+  position: fixed;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: var(--sp64);
+  margin-inline: auto;
+  padding: var(--sp4) var(--sp32);
+  background-color: rgb(0 0 0 / 80%);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  overflow: hidden;
+}
+body:global(.darkMode) .container {
+  background-color: rgb(255 255 255 / 80%);
+}
+
+.mobileBtn {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: none; /* flex on mobile */
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--sp16);
+  gap: 8px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-radius: 16px;
+}
+.mobileBtn::after,
+.mobileBtn::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: var(--bg-1);
+  border-radius: 1px;
+  transition:
+    translate 300ms,
+    rotate 300ms 300ms;
+}
+.wrapper[data-open="true"] .mobileBtn::before {
+  translate: 0px 5px;
+  rotate: 45deg;
+}
+.wrapper[data-open="true"] .mobileBtn::after {
+  translate: 0px -5px;
+  rotate: -45deg;
+}
+
+.navigation ul {
+  display: flex;
+  gap: var(--sp32);
+}
+
+.navigation a {
+  display: block;
+  padding: var(--sp4) var(--sp16);
+  border-radius: 8px;
+  transition: background-color 300ms;
+}
+.navigation a:focus {
+  outline: 1px solid var(--bd-0);
+}
+.navigation a:hover {
+  background-color: var(--inv-bg-2);
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+    gap: var(--sp16);
+    padding: var(--sp16);
+    border-radius: 0;
+    clip-path: inset(
+      0px calc(100% - 3.5rem) calc(100% - 3.5rem) 0px round 16px
+    );
+    transition: 500ms clip-path;
+  }
+  .wrapper[data-open="true"] .container {
+    clip-path: inset(0px round 16px);
+  }
+
+  .mobileBtn {
+    display: flex;
+  }
+
+  .navigation {
+    width: 60%;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--sp8);
+  }
+
+  .navigation a {
+    padding-block: var(--sp8);
+    text-align: center;
+  }
+}
+
