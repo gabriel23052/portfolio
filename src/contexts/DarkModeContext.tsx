@@ -13,10 +13,25 @@ type ContextValue = {
 const DarkModeContext = createContext<ContextValue | undefined>(undefined);
 
 const DarkModeContextProvider = ({ children }: PropsWithChildren) => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    const preference = (() => {
+      const localStoragePreference = localStorage.getItem("darkMode");
+      if (localStoragePreference === null) {
+        const browserConfigPreference = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+        localStorage.setItem("darkMode", String(browserConfigPreference));
+        return browserConfigPreference;
+      }
+      return localStorage.getItem("darkMode") === "true";
+    })();
+    document.body.dataset.darkmode = String(preference);
+    return preference;
+  });
 
   const toggleDarkMode = () => {
-    document.body.classList.toggle("darkMode");
+    document.body.dataset.darkmode = String(!darkMode);
+    localStorage.setItem("darkMode", String(!darkMode));
     setDarkMode((prev) => !prev);
   };
 

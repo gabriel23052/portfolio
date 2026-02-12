@@ -19,7 +19,7 @@
   transition: 500ms translate;
 }
 
-body:global(.darkMode) .sun {
+body[data-darkmode="true"] .sun {
   translate: 1rem -2.5rem;
 }
 
@@ -28,7 +28,7 @@ body:global(.darkMode) .sun {
   position: absolute;
   translate: 1rem 2.5rem;
 }
-body:global(.darkMode) .moon {
+body[data-darkmode="true"] .moon {
   translate: 0 0;
 }
 
@@ -36,7 +36,7 @@ body:global(.darkMode) .moon {
   .moon {
     translate: 5rem 4rem;
   }
-  body:global(.darkMode) .sun {
+  body[data-darkmode="true"] .sun {
     translate: -5rem 4rem;
   }
 }

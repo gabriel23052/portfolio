@@ -128,7 +128,7 @@ html {
 body {
   background-color: var(--bg-2);
 }
-body.darkMode {
+body[data-darkmode="true"] {
   --bg-0: #292929;
   --bg-1: #212121;
   --bg-2: #1a1a1a;
