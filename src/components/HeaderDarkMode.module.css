@@ -16,28 +16,4 @@
   width: 1.5rem;
   height: 1.5rem;
   color: var(--inv-tx-2);
-  transition: 500ms translate;
 }
-
-body[data-darkmode="true"] .sun {
-  translate: 1rem -2.5rem;
-}
-
-.moon {
-  left: var(--sp8);
-  position: absolute;
-  translate: 1rem 2.5rem;
-}
-body[data-darkmode="true"] .moon {
-  translate: 0 0;
-}
-
-@media (max-width: 700px) {
-  .moon {
-    translate: 5rem 4rem;
-  }
-  body[data-darkmode="true"] .sun {
-    translate: -5rem 4rem;
-  }
-}
-

@@ -15,7 +15,7 @@ type Props = {
 /**
  * Botão animado para alterar o estado do modo escuro
  * @param ariaId ID utilizado para linkar a presença do botão com o estado de
- * exibição atual do menu mobile em leitores de tela 
+ * exibição atual do menu mobile em leitores de tela
  * @param inert Atributo HTML para tornar o botão inacessível caso o menu
  * mobile esteja fechado
  */
@@ -35,13 +35,11 @@ const HeaderDarkMode = ({ ariaId, inert }: Props) => {
       id={ariaId}
       inert={inert}
     >
-      <SunIcon
-        className={classes.sun}
-        width="24"
-        height="24"
-        aria-hidden="true"
-      />
-      <MoonIcon className={classes.moon} width="24" height="24" aria-hidden="true" />
+      {darkMode ? (
+        <MoonIcon width="24" height="24" aria-hidden="true" />
+      ) : (
+        <SunIcon width="24" height="24" aria-hidden="true" />
+      )}
     </button>
   );
 };

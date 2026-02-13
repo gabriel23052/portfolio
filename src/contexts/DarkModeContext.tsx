@@ -30,9 +30,17 @@ const DarkModeContextProvider = ({ children }: PropsWithChildren) => {
   });
 
   const toggleDarkMode = () => {
-    document.body.dataset.darkmode = String(!darkMode);
-    localStorage.setItem("darkMode", String(!darkMode));
-    setDarkMode((prev) => !prev);
+    if (!document.startViewTransition) {
+      document.body.dataset.darkmode = String(!darkMode);
+      localStorage.setItem("darkMode", String(!darkMode));
+      setDarkMode((prev) => !prev);
+      return;
+    }
+    document.startViewTransition(() => {
+      document.body.dataset.darkmode = String(!darkMode);
+      localStorage.setItem("darkMode", String(!darkMode));
+      setDarkMode((prev) => !prev);
+    });
   };
 
   return (
@@ -44,8 +52,8 @@ const DarkModeContextProvider = ({ children }: PropsWithChildren) => {
 
 /**
  * Retorna a API para interagir com o contexto de modo escuro que
- * encapsula o estado do modo escuro e altera a classe no body para
- * tornar o estado acessível via CSS
+ * encapsula o estado do modo escuro e altera o atributo data-darkmode
+ * no body para tornar o estado acessível via CSS
  * @returns API do \<DarkModeContext\>
  */
 const useDarkModeContext = () => {

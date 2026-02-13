@@ -267,3 +267,19 @@ body[data-darkmode="true"] {
   font-size: 1.25rem;
   line-height: 1.5rem;
 }
+
+::view-transition-new(root) {
+  animation: circleAnimation 1.5s;
+}
+::view-transition-old(root) {
+  animation: none;
+}
+
+@keyframes circleAnimation {
+  from {
+    clip-path: circle(0px);
+  }
+  to {
+    clip-path: circle(120vw);
+  }
+}
