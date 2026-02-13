@@ -275,6 +275,13 @@ body[data-darkmode="true"] {
   line-height: 1.5rem;
 }
 
+.t-skill {
+  font-family: "Noto Sans";
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
 ::view-transition-new(root) {
   animation: circleAnimation 1.5s;
 }

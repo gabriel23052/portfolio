@@ -7,7 +7,7 @@ import classes from "./Header.module.css";
 const MOBILE_MENU_MAX_WIDTH = 700;
 
 const NAVIGATION_LINKS = [
-  { label: "Stack", url: "#stack" },
+  { label: "Skills", url: "#skills" },
   { label: "Projetos", url: "#projects" },
   { label: "Certificados", url: "#certificates" },
   { label: "Contato", url: "#contact" },
