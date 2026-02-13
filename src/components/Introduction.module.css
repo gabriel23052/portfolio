@@ -1,0 +1,33 @@
+.container h1 {
+  margin-bottom: var(--sp4);
+}
+
+.linksContainer {
+  display: flex;
+  gap: var(--sp16);
+  margin-bottom: var(--sp64);
+}
+
+.skills {
+  margin-bottom: var(--sp24);
+}
+
+.skills span {
+  font-size: 1.5rem;
+}
+
+.container address {
+  display: flex;
+  align-items: center;
+  gap: var(--sp8);
+  margin-bottom: var(--sp12);
+}
+.container address::before {
+  content: "";
+  width: 0.8125rem;
+  height: 1rem;
+  display: block;
+  background: url("../assets/svg/address.svg");
+  background-size: 100%;
+}
+

@@ -54,6 +54,9 @@ a {
   color: black;
   text-decoration: none;
 }
+a:focus {
+  outline: none;
+}
 
 button {
   border: none;
@@ -66,6 +69,10 @@ h1,
 h2,
 h3 {
   font-weight: 400;
+}
+
+address {
+  font-style: normal;
 }
 
 html {
@@ -199,7 +206,7 @@ body[data-darkmode="true"] {
 .t-name {
   font-family: "Noto Serif";
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.8rem;
   line-height: 3.25rem;
 }
 

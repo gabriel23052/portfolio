@@ -1,4 +1,5 @@
 import Header from "./Header";
+import Hero from "./Hero";
 
 import { DarkModeContextProvider } from "../contexts/DarkModeContext";
 
@@ -9,6 +10,7 @@ const App = () => {
   return (
     <DarkModeContextProvider>
       <Header />
+      <Hero />
     </DarkModeContextProvider>
   );
 };

@@ -36,9 +36,9 @@ const HeaderDarkMode = ({ ariaId, inert }: Props) => {
       inert={inert}
     >
       {darkMode ? (
-        <MoonIcon width="24" height="24" aria-hidden="true" />
+        <MoonIcon aria-hidden="true" />
       ) : (
-        <SunIcon width="24" height="24" aria-hidden="true" />
+        <SunIcon aria-hidden="true" />
       )}
     </button>
   );
