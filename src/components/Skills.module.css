@@ -1,5 +1,6 @@
 .wrapper {
   box-shadow: 0 0 8px rgb(0 0 0 / 40%);
+  margin-bottom: var(--sp64);
 }
 
 .container {

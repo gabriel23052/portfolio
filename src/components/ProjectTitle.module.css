@@ -1,0 +1,12 @@
+.title {
+  display: flex;
+  gap: var(--sp8);
+  align-items: center;
+  margin-bottom: var(--sp16);
+}
+
+.title img {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+}

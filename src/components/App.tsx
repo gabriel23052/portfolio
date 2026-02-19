@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Hero from "./Hero";
 import Skills from "./Skills";
+import Projects from "./Projects";
 
 import { DarkModeContextProvider } from "../contexts/DarkModeContext";
 /**
@@ -12,6 +13,7 @@ const App = () => {
       <Header />
       <Hero />
       <Skills />
+      <Projects />
     </DarkModeContextProvider>
   );
 };

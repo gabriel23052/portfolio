@@ -1,0 +1,21 @@
+.container {
+  width: 18.75rem;
+  background: var(--g-title);
+  padding: var(--sp12) var(--sp24);
+  border-radius: 16px;
+  position: relative;
+}
+
+.container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 2px solid var(--inv-bd-1);
+  border-radius: 16px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+}
+

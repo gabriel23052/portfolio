@@ -4,7 +4,7 @@ import classes from "./LinkButton.module.css";
 
 type Props = ComponentPropsWithoutRef<"a"> & {
   className?: string;
-  bgColor: "red" | "blue";
+  bgColor: "primary" | "secondary";
   Icon: ComponentType<SVGProps<SVGSVGElement>>;
 };
 
@@ -13,7 +13,7 @@ type Props = ComponentPropsWithoutRef<"a"> & {
  * de maior importancia na hierarquia
  * @param children Texto que será exibido no botão
  * @param Icon Ícone em forma de componente SVG que será exibido no botão
- * @param bgColor Seletor para cor de fundo, deve ser "red" ou "blue"
+ * @param bgColor Seletor para cor de fundo, deve ser "primary" ou "secondary"
  */
 const LinkButton = ({
   children,
@@ -24,7 +24,7 @@ const LinkButton = ({
 }: Props) => {
   return (
     <a
-      className={`t-button-label-0 ${bgColor === "red" ? classes.red : classes.blue} ${classes.linkBtn} ${className || ""}`}
+      className={`t-button-label-0 ${bgColor === "primary" ? classes.primary : classes.secondary} ${classes.linkBtn} ${className || ""}`}
       {...props}
     >
       {children} <Icon aria-hidden="true" />
@@ -33,4 +33,3 @@ const LinkButton = ({
 };
 
 export default LinkButton;
-

@@ -10,10 +10,10 @@
   box-shadow: 0 0 4px rgb(0 0 0 / 25%);
   color: #fafafa;
 }
-.linkBtn.red {
+.linkBtn.primary {
   background: var(--g-primary);
 }
-.linkBtn.blue {
+.linkBtn.secondary {
   background: var(--g-secondary);
 }
 
@@ -34,13 +34,12 @@
   z-index: -1;
   transition: translate 300ms;
 }
-.linkBtn.red::before {
+.linkBtn.primary::before {
   border: 2px solid var(--primary-light);
 }
-.linkBtn.blue::before {
+.linkBtn.secondary::before {
   border: 2px solid var(--secondary-light);
 }
 .linkBtn:is(:hover, :focus)::before {
   translate: -4px -4px;
 }
-

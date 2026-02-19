@@ -1,0 +1,31 @@
+.container {
+  margin-bottom: var(--sp32);
+}
+
+.container h4 {
+  margin-bottom: var(--sp8);
+}
+
+.container ul {
+  display: flex;
+  gap: var(--sp8) var(--sp32);
+  flex-wrap: wrap;
+}
+
+.container li {
+  display: flex;
+  gap: var(--sp8);
+  align-items: center;
+}
+.container li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.container li.primary::before {
+  background-color: var(--primary);
+}
+.container li.secondary::before {
+  background-color: var(--secondary);
+}

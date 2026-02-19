@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: var(--sp12);
+  justify-content: end;
+}
+
+.repoLink {
+  display: flex;
+  align-items: center;
+  gap: var(--sp12);
+  padding: var(--sp8) var(--sp16);
+  border: 1px solid var(--bd-1);
+  border-radius: 8px;
+  text-transform: uppercase;
+  transition: 300ms background-color;
+  box-shadow: 0 0 4px rgb(0 0 0 / 10%);
+}
+.repoLink:hover {
+  background-color: var(--bg-1);
+}
+
+.repoLink svg {
+  width: 1rem;
+  height: 1rem;
+}

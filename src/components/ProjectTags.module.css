@@ -1,0 +1,13 @@
+.tags {
+  display: flex;
+  gap: var(--sp8);
+  flex-wrap: wrap;
+  margin-bottom: var(--sp24);
+}
+
+.tags li {
+  padding: var(--sp4) var(--sp8);
+  border-radius: 8px;
+  border: 1px solid var(--bd-1);
+  box-shadow: 2px 2px 0px rgb(0 0 0 / 20%);
+}

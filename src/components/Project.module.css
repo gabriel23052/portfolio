@@ -1,0 +1,81 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.decoration {
+  width: 4rem;
+  justify-self: end;
+  position: relative;
+}
+.decoration::before {
+  content: "";
+  width: 4px;
+  height: 100%;
+  display: block;
+  background-color: #dedede;
+}
+body[data-darkmode="true"] .decoration::before {
+  background-color: #414141;
+}
+.wrapper:last-child .decoration::before {
+  height: 40%;
+}
+.decoration::after {
+  content: "";
+  width: 200%;
+  height: 4rem;
+  display: block;
+  border: 1px solid #dedede;
+  border-radius: 0 0 0 32px;
+  border-width: 0 0 4px 4px;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  translate: 0 calc(-50% - 2rem);
+}
+body[data-darkmode="true"] .decoration::after {
+  border-color: #414141;
+}
+
+.container {
+  margin-bottom: var(--sp32);
+  padding: var(--sp16) var(--sp20);
+  border: 1px solid var(--bd-1);
+  border-radius: 16px;
+  box-shadow:
+    0 0 20px rgb(0 0 0 / 4%),
+    0 0 8px rgb(0 0 0 / 8%);
+  z-index: 0; /* Para exibir a decoração de LinkButton */
+}
+.wrapper:last-child .container {
+  margin-bottom: 0;
+}
+.wrapper:first-child .container {
+  margin-top: var(--sp32);
+}
+
+.description {
+  margin-bottom: var(--sp24);
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    grid-template-columns: 1fr 10fr;
+  }
+
+  .decoration {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .decoration {
+    display: none;
+  }
+}
+

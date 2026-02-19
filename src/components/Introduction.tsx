@@ -32,11 +32,11 @@ const Introduction = () => {
         <LinkButton
           Icon={portfolioData.socialLinks.github.Icon}
           href={portfolioData.socialLinks.github.url}
-          bgColor="red"
+          bgColor="primary"
         >
           GitHub
         </LinkButton>
-        <LinkButton Icon={ProjectsIcon} href="#projects" bgColor="blue">
+        <LinkButton Icon={ProjectsIcon} href="#projects" bgColor="secondary">
           Projetos
         </LinkButton>
       </div>

@@ -1,0 +1,12 @@
+.container {
+  width: min(1366px, 100%);
+  margin-inline: auto;
+  margin-bottom: var(--sp64);
+  padding-inline: var(--sp16);
+}
+
+.container > ul {
+  display: flex;
+  flex-direction: column;
+}
+
