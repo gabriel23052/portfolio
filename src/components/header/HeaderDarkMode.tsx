@@ -1,9 +1,9 @@
 import type { MouseEventHandler } from "react";
 
-import SunIcon from "../assets/svg/sun.svg?react";
-import MoonIcon from "../assets/svg/moon.svg?react";
+import SunIcon from "../../assets/svg/sun.svg?react";
+import MoonIcon from "../../assets/svg/moon.svg?react";
 
-import { useDarkModeContext } from "../contexts/DarkModeContext";
+import { useDarkModeContext } from "../../contexts/DarkModeContext";
 
 import classes from "./HeaderDarkMode.module.css";
 

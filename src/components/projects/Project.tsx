@@ -1,4 +1,4 @@
-import type { TProject } from "../portfolioData";
+import type { TProject } from "../../portfolioData";
 
 import ProjectTitle from "./ProjectTitle";
 import ProjectTags from "./ProjectTags";

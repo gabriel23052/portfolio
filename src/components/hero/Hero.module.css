@@ -1,0 +1,103 @@
+.container {
+  width: min(1366px, 100%);
+  height: clamp(50rem, 100vh, 62rem);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-inline: auto;
+  padding-inline: var(--sp16);
+}
+
+@media (max-width: 900px) {
+  .container {
+    height: auto;
+    grid-template-columns: 1fr;
+    gap: var(--sp32);
+    padding-block: 11rem;
+  }
+}
+
+@media (max-width: 3840px) {
+  .wrapper {
+    background:
+      url("../../assets/images/hero-bg-top-3840.png") no-repeat top center,
+      url("../../assets/images/hero-bg-bottom-3840.png") no-repeat bottom center;
+  }
+  body[data-darkmode="true"] .wrapper {
+    background:
+      url("../../assets/images/hero-bg-dark-top-3840.png") no-repeat top center,
+      url("../../assets/images/hero-bg-dark-bottom-3840.png") no-repeat bottom
+        center;
+  }
+}
+
+@media (max-width: 2560px) {
+  .wrapper {
+    background:
+      url("../../assets/images/hero-bg-top-2560.png") no-repeat top center,
+      url("../../assets/images/hero-bg-bottom-2560.png") no-repeat bottom center;
+  }
+  body[data-darkmode="true"] .wrapper {
+    background:
+      url("../../assets/images/hero-bg-dark-top-2560.png") no-repeat top center,
+      url("../../assets/images/hero-bg-dark-bottom-2560.png") no-repeat bottom
+        center;
+  }
+}
+
+@media (max-width: 1920px) {
+  .wrapper {
+    background:
+      url("../../assets/images/hero-bg-top-1920.png") no-repeat top center,
+      url("../../assets/images/hero-bg-bottom-1920.png") no-repeat bottom center;
+  }
+  body[data-darkmode="true"] .wrapper {
+    background:
+      url("../../assets/images/hero-bg-dark-top-1920.png") no-repeat top center,
+      url("../../assets/images/hero-bg-dark-bottom-1920.png") no-repeat bottom
+        center;
+  }
+}
+
+@media (max-width: 1280px) {
+  .wrapper {
+    background:
+      url("../../assets/images/hero-bg-top-1280.png") no-repeat top center,
+      url("../../assets/images/hero-bg-bottom-1280.png") no-repeat bottom center;
+  }
+  body[data-darkmode="true"] .wrapper {
+    background:
+      url("../../assets/images/hero-bg-dark-top-1280.png") no-repeat top center,
+      url("../../assets/images/hero-bg-dark-bottom-1280.png") no-repeat bottom
+        center;
+  }
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    background:
+      url("../../assets/images/hero-bg-top-800.png") no-repeat top center,
+      url("../../assets/images/hero-bg-bottom-800.png") no-repeat bottom center;
+  }
+  body[data-darkmode="true"] .wrapper {
+    background:
+      url("../../assets/images/hero-bg-dark-top-800.png") no-repeat top center,
+      url("../../assets/images/hero-bg-dark-bottom-800.png") no-repeat bottom
+        center;
+  }
+}
+
+@media (max-width: 420px) {
+  .wrapper {
+    background:
+      url("../../assets/images/hero-bg-top-420.png") no-repeat top center,
+      url("../../assets/images/hero-bg-bottom-420.png") no-repeat bottom center;
+  }
+  body[data-darkmode="true"] .wrapper {
+    background:
+      url("../../assets/images/hero-bg-dark-top-420.png") no-repeat top center,
+      url("../../assets/images/hero-bg-dark-bottom-420.png") no-repeat bottom
+        center;
+  }
+}
+

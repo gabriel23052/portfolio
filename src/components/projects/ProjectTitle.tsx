@@ -1,4 +1,4 @@
-import { useDarkModeContext } from "../contexts/DarkModeContext";
+import { useDarkModeContext } from "../../contexts/DarkModeContext";
 import styles from "./ProjectTitle.module.css";
 
 type Props = {

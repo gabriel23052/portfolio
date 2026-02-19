@@ -1,15 +1,15 @@
-import ExternalLinks from "./ExternalLinks";
-import LinkButton from "./LinkButton";
-import ProjectsIcon from "../assets/svg/project.svg?react";
+import ExternalLinks from "../ExternalLinks";
+import LinkButton from "../LinkButton";
+import ProjectsIcon from "../../assets/svg/project.svg?react";
 
-import { portfolioData } from "../portfolioData";
+import { portfolioData } from "../../portfolioData";
 
-import classes from "./Introduction.module.css";
+import classes from "./HeroIntroduction.module.css";
 
 /**
  * Informações importantes de introdução do portfólio
  */
-const Introduction = () => {
+const HeroIntroduction = () => {
   const getGreeting = () => {
     const nowHour = new Date().getHours();
     return nowHour < 6
@@ -27,7 +27,9 @@ const Introduction = () => {
         {getGreeting()}, meu nome é
       </p>
       <h1 className="t-name tx-2">Gabriel G. Pereira</h1>
-      <p className={`t-skills tx-1 ${classes.skills}`}>Frontend <span>&</span> UI/UX</p>
+      <p className={`t-skills tx-1 ${classes.skills}`}>
+        Frontend <span>&</span> UI/UX
+      </p>
       <div className={classes.linksContainer}>
         <LinkButton
           Icon={portfolioData.socialLinks.github.Icon}
@@ -40,13 +42,10 @@ const Introduction = () => {
           Projetos
         </LinkButton>
       </div>
-      <address className="tx-0 t-paragraph">
-        Viamão - RS, Brasil
-      </address>
+      <address className="tx-0 t-paragraph">Viamão - RS, Brasil</address>
       <ExternalLinks />
     </div>
   );
 };
 
-export default Introduction;
-
+export default HeroIntroduction;

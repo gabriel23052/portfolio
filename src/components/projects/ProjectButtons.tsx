@@ -1,6 +1,6 @@
-import LinkButton from "./LinkButton";
-import DemoIcon from "../assets/svg/demo.svg?react";
-import GithubIcon from "../assets/svg/github.svg?react";
+import LinkButton from "../LinkButton";
+import DemoIcon from "../../assets/svg/demo.svg?react";
+import GithubIcon from "../../assets/svg/github.svg?react";
 
 import classes from "./ProjectButtons.module.css";
 

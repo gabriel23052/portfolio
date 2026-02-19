@@ -1,7 +1,7 @@
-import Title from "./Title";
+import Title from "../Title";
 import Project from "./Project";
 
-import { portfolioData } from "../portfolioData";
+import { portfolioData } from "../../portfolioData";
 
 import classes from "./Projects.module.css";
 

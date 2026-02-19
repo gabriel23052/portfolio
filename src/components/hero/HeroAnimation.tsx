@@ -1,9 +1,9 @@
-import classes from "./Animation.module.css";
+import classes from "./HeroAnimation.module.css";
 
 /**
  * Animação que fará parte do Hero futuramente
  */
-const Animation = () => {
+const HeroAnimation = () => {
   return (
     <div className={classes.container} aria-hidden="true">
       TODO
@@ -11,5 +11,4 @@ const Animation = () => {
   );
 };
 
-export default Animation;
-
+export default HeroAnimation;

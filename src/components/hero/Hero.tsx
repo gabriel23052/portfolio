@@ -1,5 +1,5 @@
-import Introduction from "./Introduction";
-import Animation from "./Animation";
+import HeroIntroduction from "./HeroIntroduction";
+import HeroAnimation from "./HeroAnimation";
 
 import classes from "./Hero.module.css";
 
@@ -12,12 +12,11 @@ const Hero = () => {
   return (
     <div className={classes.wrapper}>
       <main className={classes.container}>
-        <Introduction />
-        <Animation />
+        <HeroIntroduction />
+        <HeroAnimation />
       </main>
     </div>
   );
 };
 
 export default Hero;
-
