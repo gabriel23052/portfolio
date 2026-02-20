@@ -26,10 +26,21 @@ export type TProject = {
   demoUrl: string;
 };
 
+export type TSkill = { label: string; iconUrl: string };
+
+export type TCertificateList = {
+  institution: string;
+  modules: {
+    name: string;
+    hours: number;
+  }[];
+};
+
 export type TPortfolioData = {
   socialLinks: Record<TSocialLinkKey, TSocialLink>;
-  skills: { label: string; iconUrl: string }[];
+  skills: TSkill[];
   projects: TProject[];
+  certificates: TCertificateList[];
 };
 
 const portfolioData: TPortfolioData = {
@@ -158,6 +169,44 @@ const portfolioData: TPortfolioData = {
       conceptBullets: ["Lorem ipsum", "consectetur adipiscing"],
       repositoryUrl: "",
       demoUrl: "",
+    },
+  ],
+  certificates: [
+    {
+      institution: "Udemy",
+      modules: [
+        { name: "React Fundamentals", hours: 32 },
+        { name: "TypeScript for Frontend", hours: 28 },
+        { name: "Advanced CSS Techniques", hours: 24 },
+        { name: "JavaScript ES6+ Mastery", hours: 40 },
+        { name: "Web Design Principles", hours: 16 },
+        { name: "UI Design Systems", hours: 20 },
+        { name: "Component Libraries with React", hours: 18 },
+        { name: "State Management with Redux", hours: 22 },
+        { name: "Responsive Design Patterns", hours: 14 },
+        { name: "Web Accessibility (a11y)", hours: 12 },
+        { name: "Performance Optimization Strategies", hours: 26 },
+      ],
+    },
+    {
+      institution: "Alura",
+      modules: [
+        { name: "Front-end Developer Formação", hours: 108 },
+        { name: "React com TypeScript", hours: 60 },
+        { name: "UX/UI Design Fundamentals", hours: 48 },
+        { name: "Git e GitHub Essentials", hours: 32 },
+      ],
+    },
+    {
+      institution: "edX",
+      modules: [{ name: "Front-end Engineering Professional", hours: 80 }],
+    },
+    {
+      institution: "Coursera",
+      modules: [
+        { name: "UI/UX Design Thinking", hours: 36 },
+        { name: "Web Development Specialization", hours: 96 },
+      ],
     },
   ],
 } as const;

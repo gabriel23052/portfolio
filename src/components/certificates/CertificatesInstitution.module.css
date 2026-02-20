@@ -1,0 +1,38 @@
+.container h3 {
+  margin-bottom: var(--sp12);
+}
+
+.container ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp12) var(--sp32);
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  gap: var(--sp8);
+}
+.name::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  display: block;
+  border-radius: 2px;
+  background-color: #9a9a9a;
+}
+body[data-darkmode="true"] .name::before {
+  background-color: #595959;
+}
+
+.hours {
+  margin-left: calc(6px + var(--sp8));
+}
+
+@media (max-width: 500px) {
+  .container ul {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}
+
