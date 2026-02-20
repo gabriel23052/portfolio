@@ -32,7 +32,7 @@
   top: 4px;
   left: 4px;
   z-index: -1;
-  transition: translate 300ms;
+  transition: translate 300ms, scale 300ms;
 }
 .linkBtn.primary::before {
   border: 2px solid var(--primary-light);
@@ -40,6 +40,10 @@
 .linkBtn.secondary::before {
   border: 2px solid var(--secondary-light);
 }
-.linkBtn:is(:hover, :focus)::before {
+.linkBtn:hover::before {
   translate: -4px -4px;
+} 
+.linkBtn:focus::before {
+  translate: -4px -4px;
+  scale: 1.05 1.2;
 }
