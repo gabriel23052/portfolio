@@ -1,29 +1,26 @@
-import GithubIcon from "./assets/svg/github.svg?react";
-import LinkedinIcon from "./assets/svg/linkedin.svg?react";
-import WhatsappIcon from "./assets/svg/whatsapp.svg?react";
-import MailIcon from "./assets/svg/mail.svg?react";
+export type TSocialKeys = "github" | "linkedin" | "whatsapp" | "email";
 
-export type TSvgIcon = React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
-
-export type TSocialLinkKey = "github" | "linkedin" | "whatsapp" | "email";
-
-export type TSocialLink = {
+export type TSocial = {
   name: string;
   url: string;
-  Icon: TSvgIcon;
+  readableFormat: string;
+  iconUrl: {
+    lightMode: string;
+    darkMode: string;
+  };
 };
 
 export type TProject = {
   title: string;
-  faviconUrl: {
-    lightMode: string;
-    darkMode: string;
-  };
   tags: string[];
   description: string;
   conceptBullets: string[];
   repositoryUrl: string;
   demoUrl: string;
+  faviconUrl: {
+    lightMode: string;
+    darkMode: string;
+  };
 };
 
 export type TSkill = { label: string; iconUrl: string };
@@ -37,7 +34,7 @@ export type TCertificateList = {
 };
 
 export type TPortfolioData = {
-  socialLinks: Record<TSocialLinkKey, TSocialLink>;
+  socialLinks: Record<TSocialKeys, TSocial>;
   skills: TSkill[];
   projects: TProject[];
   certificates: TCertificateList[];
@@ -47,23 +44,39 @@ const portfolioData: TPortfolioData = {
   socialLinks: {
     github: {
       name: "GitHub",
+      readableFormat: "gabriel23052",
       url: "",
-      Icon: GithubIcon,
+      iconUrl: {
+        lightMode: "/socialIcons/github.svg",
+        darkMode: "/socialIcons/github-dark.svg",
+      },
     },
     linkedin: {
       name: "LinkedIn",
+      readableFormat: "",
       url: "",
-      Icon: LinkedinIcon,
+      iconUrl: {
+        lightMode: "/socialIcons/linkedin.svg",
+        darkMode: "/socialIcons/linkedin-dark.svg",
+      },
     },
     whatsapp: {
       name: "WhatsApp",
-      url: "",
-      Icon: WhatsappIcon,
+      readableFormat: "(51) 99546-5290",
+      url: "https://wa.me/5551995465290",
+      iconUrl: {
+        lightMode: "/socialIcons/whatsapp.svg",
+        darkMode: "/socialIcons/whatsapp-dark.svg",
+      },
     },
     email: {
       name: "Email",
-      url: "",
-      Icon: MailIcon,
+      readableFormat: "gabrielggp2002@gmail.com",
+      url: "mailto:gabrielggp2002@gmail.com",
+      iconUrl: {
+        lightMode: "/socialIcons/mail.svg",
+        darkMode: "/socialIcons/mail-dark.svg",
+      },
     },
   },
   skills: [
@@ -208,7 +221,7 @@ const portfolioData: TPortfolioData = {
         { name: "Web Development Specialization", hours: 96 },
       ],
     },
-  ],
+  ]
 } as const;
 
 export { portfolioData };

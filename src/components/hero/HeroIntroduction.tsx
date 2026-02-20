@@ -1,6 +1,7 @@
-import ExternalLinks from "../ExternalLinks";
+import SocialLinks from "../SocialLinks";
 import LinkButton from "../LinkButton";
 import ProjectsIcon from "../../assets/svg/project.svg?react";
+import GithubIcon from "../../assets/svg/github.svg?react";
 
 import { portfolioData } from "../../portfolioData";
 
@@ -32,7 +33,7 @@ const HeroIntroduction = () => {
       </p>
       <div className={classes.linksContainer}>
         <LinkButton
-          Icon={portfolioData.socialLinks.github.Icon}
+          Icon={GithubIcon}
           href={portfolioData.socialLinks.github.url}
           bgColor="primary"
         >
@@ -43,7 +44,7 @@ const HeroIntroduction = () => {
         </LinkButton>
       </div>
       <address className="tx-0 t-paragraph">Viamão - RS, Brasil</address>
-      <ExternalLinks />
+      <SocialLinks />
     </div>
   );
 };

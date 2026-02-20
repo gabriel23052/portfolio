@@ -16,7 +16,7 @@ const CertificatesInstitution = ({ certificateList }: Props) => {
       <h3 className="t-project-title tx-2">{certificateList.institution}</h3>
       <ul>
         {certificateList.modules.map(({ name, hours }) => (
-          <li>
+          <li key={name}>
             <p className={`t-paragraph tx-2 ${classes.name}`}>{name}</p>
             <p className={`t-small tx-0 ${classes.hours}`}>{hours}h</p>
           </li>

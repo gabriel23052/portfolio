@@ -1,4 +1,6 @@
-import classes from "./ExternalLinks.module.css";
+import classes from "./SocialLinks.module.css";
+
+import { useDarkModeContext } from "../contexts/DarkModeContext";
 
 import { portfolioData } from "../portfolioData";
 
@@ -6,7 +8,9 @@ import { portfolioData } from "../portfolioData";
  * Links externos para redes sociais e afins, os links vem diretamente
  * do portfolioData
  */
-const ExternalLinks = () => {
+const SocialLinks = () => {
+  const { darkMode } = useDarkModeContext();
+
   return (
     <ul className={classes.container}>
       {Object.values(portfolioData.socialLinks).map((link) => {
@@ -18,7 +22,10 @@ const ExternalLinks = () => {
               title={link.name}
               target="_blank"
             >
-              <link.Icon aria-hidden="true" />
+              <img
+                src={darkMode ? link.iconUrl.darkMode : link.iconUrl.lightMode}
+                aria-hidden="true"
+              />
             </a>
           </li>
         );
@@ -27,5 +34,4 @@ const ExternalLinks = () => {
   );
 };
 
-export default ExternalLinks;
-
+export default SocialLinks;

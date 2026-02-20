@@ -3,6 +3,7 @@ import Hero from "./hero/Hero";
 import Skills from "./Skills";
 import Projects from "./projects/Projects";
 import Certificates from "./certificates/Certificates";
+import Contacts from "./contacts/Contacts";
 
 import { DarkModeContextProvider } from "../contexts/DarkModeContext";
 
@@ -17,6 +18,7 @@ const App = () => {
       <Skills />
       <Projects />
       <Certificates />
+      <Contacts />
     </DarkModeContextProvider>
   );
 };
