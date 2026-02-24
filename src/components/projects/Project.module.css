@@ -42,11 +42,15 @@ body[data-darkmode="true"] .decoration::after {
   margin-bottom: var(--sp32);
   padding: var(--sp16) var(--sp20);
   border: 1px solid var(--bd-1);
-  border-radius: 16px;
+  border-radius: 20px;
+  corner-shape: squircle;
   box-shadow:
     0 0 20px rgb(0 0 0 / 4%),
     0 0 8px rgb(0 0 0 / 8%);
   z-index: 0; /* Para exibir a decoração de LinkButton */
+}
+.wrapper:nth-child(even) .container {
+  width: 97%;
 }
 .wrapper:last-child .container {
   margin-bottom: 0;
@@ -72,6 +76,10 @@ body[data-darkmode="true"] .decoration::after {
 @media (max-width: 700px) {
   .wrapper {
     grid-template-columns: 1fr;
+  }
+
+  .wrapper:nth-child(even) .container {
+    width: 100%;
   }
 
   .decoration {
