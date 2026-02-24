@@ -128,8 +128,13 @@ html {
   --inv-tx-2: #ebebeb;
   --inv-bd-0: #4d4d4d;
   --inv-bd-1: #333333;
-  --g-primary: linear-gradient(to right, #ff3333, #ff5533);
-  --g-secondary: linear-gradient(to right, #3345ff, #3388ff);
+  --g-primary: linear-gradient(to right, #ff3333 0%, #ff8833 50%, #ff3333 100%);
+  --g-secondary: linear-gradient(
+    to right,
+    #3345ff 0%,
+    #3388ff 50%,
+    #3345ff 100%
+  );
   --g-title: linear-gradient(to right, #292929, #1a1a1a);
 
   /* Variáveis exclusivas da animação no Hero */
