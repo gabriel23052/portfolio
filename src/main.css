@@ -178,6 +178,12 @@ body[data-darkmode="true"] {
   --grid-items-bg: #545454;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  body * {
+    transition: none !important;
+  }
+}
+
 .bg-0 {
   background-color: var(--bg-0);
 }
