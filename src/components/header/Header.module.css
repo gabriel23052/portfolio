@@ -1,11 +1,10 @@
 .wrapper {
   width: 100%;
   display: flex;
-  padding: var(--sp16);
   align-items: start;
+  padding: var(--sp16);
   position: fixed;
-  z-index: 10;
-
+  z-index: 20;
 }
 
 .container {
@@ -110,4 +109,3 @@ body[data-darkmode="true"] .container {
     text-align: center;
   }
 }
-

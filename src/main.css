@@ -131,6 +131,15 @@ html {
   --g-primary: linear-gradient(to right, #ff3333, #ff5533);
   --g-secondary: linear-gradient(to right, #3345ff, #3388ff);
   --g-title: linear-gradient(to right, #292929, #1a1a1a);
+
+  /* Variáveis exclusivas da animação no Hero */
+  --mac-green-bg: #0bdd2b;
+  --mac-green-bd: #2fb100;
+  --mac-yellow-bg: #ffcc00;
+  --mac-yellow-bd: #8a7c00;
+  --mac-red-bg: #f4221e;
+  --mac-red-bd: #870000;
+  --grid-items-bg: #dcdcdc;
 }
 
 body {
@@ -158,6 +167,15 @@ body[data-darkmode="true"] {
   --inv-bd-0: #b2b2b2;
   --inv-bd-1: #d9d9d9;
   --g-title: linear-gradient(to right, #f2f2f2, #fafafa);
+
+  /* Variáveis exclusivas da animação no Hero */
+  --mac-green-bg: #0bdd2b;
+  --mac-green-bd: #34c002;
+  --mac-yellow-bg: #ffc400;
+  --mac-yellow-bd: #eba100;
+  --mac-red-bg: #f4221e;
+  --mac-red-bd: #cd0202;
+  --grid-items-bg: #545454;
 }
 
 .bg-0 {
