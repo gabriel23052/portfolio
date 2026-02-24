@@ -16,7 +16,7 @@ export type TProject = {
   description: string;
   conceptBullets: string[];
   repositoryUrl: string;
-  demoUrl: string;
+  demoUrl?: string;
   faviconUrl: {
     lightMode: string;
     darkMode: string;
@@ -105,7 +105,7 @@ const portfolioData: TPortfolioData = {
         "Nullam felis ipsum",
       ],
       repositoryUrl: "",
-      demoUrl: "",
+      demoUrl: "..",
     },
     {
       title: "Example2",
@@ -123,7 +123,7 @@ const portfolioData: TPortfolioData = {
         "Pellentesque lobortis",
       ],
       repositoryUrl: "",
-      demoUrl: "",
+      demoUrl: ".",
     },
     {
       title: "Example3",
@@ -136,7 +136,7 @@ const portfolioData: TPortfolioData = {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam felis ipsum, ornare sit amet quam eget, pharetra dictum velit. Curabitur maximus dolor iaculis, finibus quam vel, porttitor tortor. Fusce ac turpis a tellus finibus rhoncus nec ut odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis tellus eget velit pharetra dignissim. Vestibulum vitae sem sem. Nulla nec purus leo ac elit volutpat",
       conceptBullets: ["consectetur adipiscing", "ornare sit amet"],
       repositoryUrl: "",
-      demoUrl: "",
+      demoUrl: ".",
     },
     {
       title: "Example4",
@@ -155,7 +155,7 @@ const portfolioData: TPortfolioData = {
         "dignissim velit",
       ],
       repositoryUrl: "",
-      demoUrl: "",
+      demoUrl: ".",
     },
     {
       title: "BatePonto",
@@ -168,7 +168,7 @@ const portfolioData: TPortfolioData = {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam felis ipsum, ornare sit amet quam eget, pharetra dictum velit. Curabitur maximus dolor iaculis, finibus quam vel, porttitor tortor. Fusce ac turpis a tellus finibus rhoncus nec ut odio",
       conceptBullets: ["ornare sit amet", "dictum velit", "maximus dolor"],
       repositoryUrl: "",
-      demoUrl: "",
+      demoUrl: ".",
     },
     {
       title: "Example6",
@@ -181,7 +181,6 @@ const portfolioData: TPortfolioData = {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam felis ipsum, ornare sit amet quam eget, pharetra dictum velit. Curabitur maximus dolor iaculis, finibus quam vel, porttitor tortor. Fusce ac turpis a tellus finibus rhoncus",
       conceptBullets: ["Lorem ipsum", "consectetur adipiscing"],
       repositoryUrl: "",
-      demoUrl: "",
     },
   ],
   certificates: [
@@ -221,7 +220,7 @@ const portfolioData: TPortfolioData = {
         { name: "Web Development Specialization", hours: 96 },
       ],
     },
-  ]
+  ],
 } as const;
 
 export { portfolioData };

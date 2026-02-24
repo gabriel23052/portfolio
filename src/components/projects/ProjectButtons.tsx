@@ -6,7 +6,7 @@ import classes from "./ProjectButtons.module.css";
 
 type Props = {
   repositoryUrl: string;
-  demoUrl: string;
+  demoUrl?: string;
   demoButtonBgColor: "primary" | "secondary";
 };
 
@@ -32,14 +32,16 @@ const ProjectButtons = ({
         Repositório
         <GithubIcon width={16} height={16} />
       </a>
-      <LinkButton
-        bgColor={demoButtonBgColor}
-        Icon={DemoIcon}
-        href={demoUrl}
-        target="_blank"
-      >
-        Acessar
-      </LinkButton>
+      {demoUrl && (
+        <LinkButton
+          bgColor={demoButtonBgColor}
+          Icon={DemoIcon}
+          href={demoUrl}
+          target="_blank"
+        >
+          Acessar
+        </LinkButton>
+      )}
     </div>
   );
 };
