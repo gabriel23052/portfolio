@@ -12,7 +12,7 @@ const Certificates = () => {
   return (
     <div className={classes.wrapper} id="certificates">
       <section className={classes.container}>
-        <Title subtitle="agora, veremos meus">Certificados</Title>
+        <Title subtitle="e agora meus">Certificados</Title>
         <ul>
           {portfolioData.certificates.map((certificateList) => (
             <CertificatesInstitution

@@ -29,7 +29,7 @@ const HeroIntroduction = () => {
       </p>
       <h1 className="t-name tx-2">Gabriel G. Pereira</h1>
       <p className={`t-skills tx-1 ${classes.skills}`}>
-        Frontend <span>&</span> UI/UX
+        Desenvolvedor Front-end
       </p>
       <div className={classes.linksContainer}>
         <LinkButton
