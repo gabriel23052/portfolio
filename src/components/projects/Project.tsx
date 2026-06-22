@@ -2,6 +2,7 @@ import type { TProject } from "../../portfolioData";
 
 import ProjectTitle from "./ProjectTitle";
 import ProjectTags from "./ProjectTags";
+import ProjectGallery from "./ProjectGallery";
 import ProjectConceptBullets from "./ProjectConceptBullets";
 import ProjectButtons from "./ProjectButtons";
 
@@ -25,6 +26,12 @@ const Project = ({ project, emphasisColor }: Props) => {
       <div className={`bg-1 ${classes.container}`}>
         <ProjectTitle title={project.title} faviconUrl={project.faviconUrl} />
         <ProjectTags tags={project.tags} />
+        {project.imagesUrl && project.imagesUrl.length > 0 && (
+          <ProjectGallery
+            imagesUrl={project.imagesUrl}
+            projectTitle={project.title}
+          />
+        )}
         <p className={`t-paragraph tx-1 ${classes.description}`}>
           {project.description}
         </p>

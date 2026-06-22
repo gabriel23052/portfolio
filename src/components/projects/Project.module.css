@@ -1,6 +1,6 @@
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr minmax(0, 4fr);
 }
 
 .decoration {
@@ -39,6 +39,7 @@ body[data-darkmode="true"] .decoration::after {
 }
 
 .container {
+  min-width: 0;
   margin-bottom: var(--sp32);
   padding: var(--sp16) var(--sp20);
   border: 1px solid var(--bd-1);
@@ -65,7 +66,7 @@ body[data-darkmode="true"] .decoration::after {
 
 @media (max-width: 1000px) {
   .wrapper {
-    grid-template-columns: 1fr 10fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 10fr);
   }
 
   .decoration {

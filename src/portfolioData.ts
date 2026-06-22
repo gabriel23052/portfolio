@@ -13,6 +13,7 @@ export type TSocial = {
 export type TProject = {
   title: string;
   tags: string[];
+  imagesUrl: string[];
   description: string;
   conceptBullets: string[];
   repositoryUrl: string;
@@ -96,6 +97,11 @@ const portfolioData: TPortfolioData = {
         lightMode: "/projectsFavicon/example.svg",
         darkMode: "/projectsFavicon/example.svg",
       },
+      imagesUrl: [
+        "/projectImages/example.png",
+        "/projectImages/example.png",
+        "/projectImages/example.png",
+      ],
       tags: ["HTML", "Javascript", "Typescript"],
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam felis ipsum, ornare sit amet quam eget, pharetra dictum velit. Curabitur maximus dolor iaculis, finibus quam vel, porttitor tortor. Fusce ac turpis a tellus finibus rhoncus nec ut odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis tellus eget velit pharetra dignissim. Vestibulum vitae sem sem. Nulla nec purus",
@@ -113,6 +119,8 @@ const portfolioData: TPortfolioData = {
         lightMode: "/projectsFavicon/example.svg",
         darkMode: "/projectsFavicon/example.svg",
       },
+      imagesUrl: [
+      ],
       tags: ["React", "CSS", "Figma"],
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam felis ipsum, ornare sit amet quam eget. Curabitur maximus dolor iaculis, finibus quam vel. Fusce ac turpis a tellus finibus rhoncus. Pellentesque lobortis tellus eget velit pharetra",
@@ -131,6 +139,8 @@ const portfolioData: TPortfolioData = {
         lightMode: "/projectsFavicon/example.svg",
         darkMode: "/projectsFavicon/example.svg",
       },
+      imagesUrl: [
+      ],
       tags: ["Typescript", "Git", "Github"],
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam felis ipsum, ornare sit amet quam eget, pharetra dictum velit. Curabitur maximus dolor iaculis, finibus quam vel, porttitor tortor. Fusce ac turpis a tellus finibus rhoncus nec ut odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis tellus eget velit pharetra dignissim. Vestibulum vitae sem sem. Nulla nec purus leo ac elit volutpat",
@@ -144,6 +154,8 @@ const portfolioData: TPortfolioData = {
         lightMode: "/projectsFavicon/example.svg",
         darkMode: "/projectsFavicon/example.svg",
       },
+      imagesUrl: [
+      ],
       tags: ["HTML", "CSS", "Javascript", "React", "Figma"],
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam felis ipsum, ornare sit amet quam eget, pharetra dictum velit. Fusce ac turpis a tellus finibus rhoncus nec ut odio. Pellentesque lobortis tellus eget velit pharetra dignissim",
@@ -163,6 +175,8 @@ const portfolioData: TPortfolioData = {
         lightMode: "/projectsFavicon/example.svg",
         darkMode: "/projectsFavicon/example.svg",
       },
+      imagesUrl: [
+      ],
       tags: ["Typescript", "React", "CSS"],
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam felis ipsum, ornare sit amet quam eget, pharetra dictum velit. Curabitur maximus dolor iaculis, finibus quam vel, porttitor tortor. Fusce ac turpis a tellus finibus rhoncus nec ut odio",
@@ -176,6 +190,8 @@ const portfolioData: TPortfolioData = {
         lightMode: "/projectsFavicon/example.svg",
         darkMode: "/projectsFavicon/example.svg",
       },
+      imagesUrl: [
+      ],
       tags: ["Javascript", "Git", "HTML", "CSS", "Typescript", "React"],
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam felis ipsum, ornare sit amet quam eget, pharetra dictum velit. Curabitur maximus dolor iaculis, finibus quam vel, porttitor tortor. Fusce ac turpis a tellus finibus rhoncus",

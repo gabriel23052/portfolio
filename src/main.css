@@ -130,6 +130,8 @@ html {
   --inv-tx-2: #ebebeb;
   --inv-bd-0: #4d4d4d;
   --inv-bd-1: #333333;
+  --scrollbar-track: #e2e2e2;
+  --scrollbar-thumb: #c7c7c7;
   --g-primary: linear-gradient(to right, #ff3333 0%, #ff8833 50%, #ff3333 100%);
   --g-secondary: linear-gradient(
     to right,
@@ -173,6 +175,8 @@ body[data-darkmode="true"] {
   --inv-tx-2: #1a1a1a;
   --inv-bd-0: #b2b2b2;
   --inv-bd-1: #d9d9d9;
+  --scrollbar-track: #454545;
+  --scrollbar-thumb: #7a7a7a;
   --g-title: linear-gradient(to right, #f2f2f2, #fafafa);
 
   /* Variáveis exclusivas da animação no Hero */

@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  display: flex;
+  gap: var(--sp12);
+  margin-bottom: var(--sp24);
+  padding: var(--sp8) var(--sp4);
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+  border-radius: 5px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 5px;
+}
+
+.image {
+  width: auto;
+  height: 12rem;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  .container {
+    scrollbar-color: var(--scrollbar-track) var(--scrollbar-thumb);
+  }
+}
+
