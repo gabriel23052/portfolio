@@ -36,6 +36,7 @@ const HeroIntroduction = () => {
           Icon={GithubIcon}
           href={portfolioData.socialLinks.github.url}
           bgColor="primary"
+          target="_blank"
         >
           GitHub
         </LinkButton>
