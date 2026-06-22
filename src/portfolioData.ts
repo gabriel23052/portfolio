@@ -86,6 +86,7 @@ const portfolioData: TPortfolioData = {
     { label: "JavaScript", iconUrl: "/skillsIcon/js.svg" },
     { label: "TypeScript", iconUrl: "/skillsIcon/ts.svg" },
     { label: "React", iconUrl: "/skillsIcon/react.svg" },
+    { label: "Vite", iconUrl: "/skillsIcon/vite.svg" },
     { label: "Figma", iconUrl: "/skillsIcon/figma.svg" },
     { label: "Git", iconUrl: "/skillsIcon/git.svg" },
     { label: "GitHub", iconUrl: "/skillsIcon/github.svg" },

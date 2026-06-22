@@ -8,7 +8,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: var(--sp40);
+  gap: var(--sp24);
   margin-inline: auto;
   padding: var(--sp64) var(--sp16);
 }
@@ -24,43 +24,42 @@
 }
 
 .container img {
-  height: 4rem;
+  height: 3.5rem;
 }
 
 @media (max-width: 3840px) {
   .wrapper {
-    background: url("../assets/images/skillsBanner-3840.jpg") no-repeat center;
+    background: url("../assets/images/skills-banner-3840.jpg") no-repeat center;
     background-size: cover;
   }
 }
 
 @media (max-width: 2560px) {
   .wrapper {
-    background: url("../assets/images/skillsBanner-2560.jpg") no-repeat center;
+    background: url("../assets/images/skills-banner-2560.jpg") no-repeat center;
   }
 }
 
 @media (max-width: 1920px) {
   .wrapper {
-    background: url("../assets/images/skillsBanner-1920.jpg") no-repeat center;
+    background: url("../assets/images/skills-banner-1920.jpg") no-repeat center;
   }
 }
 
 @media (max-width: 1280px) {
   .wrapper {
-    background: url("../assets/images/skillsBanner-1280.jpg") no-repeat center;
+    background: url("../assets/images/skills-banner-1280.jpg") no-repeat center;
   }
 }
 
 @media (max-width: 800px) {
   .wrapper {
-    background: url("../assets/images/skillsBanner-800.jpg") no-repeat center;
+    background: url("../assets/images/skills-banner-800.jpg") no-repeat center;
   }
 }
 
 @media (max-width: 420px) {
   .wrapper {
-    background: url("../assets/images/skillsBanner-420.jpg") no-repeat center;
-    background-size: cover;
+    background: url("../assets/images/skills-banner-420.jpg") no-repeat center;
   }
 }
