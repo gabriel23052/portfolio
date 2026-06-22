@@ -13,7 +13,7 @@ type Props = {
  * @param faviconUrl URLs do ícone do projeto para modo claro e escuro
  */
 const ProjectTitle = ({ title, faviconUrl }: Props) => {
-  const darkMode = useDarkModeContext();
+  const {darkMode} = useDarkModeContext();
 
   return (
     <div className={styles.title}>
