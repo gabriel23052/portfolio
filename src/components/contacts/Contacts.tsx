@@ -1,5 +1,7 @@
 import { portfolioData } from "../../portfolioData";
+
 import SocialLinks from "../SocialLinks";
+
 import classes from "./Contacts.module.css";
 
 type TContact = {
@@ -29,7 +31,7 @@ const Contacts = () => {
   return (
     <section className={classes.container} id="contact">
       <h2 className="t-title tx-2">Vamos conversar?</h2>
-      <address>
+      <address className={classes.contacts}>
         <ul>
           {CONTACTS.map((contact) => (
             <li className={classes.listItem} key={contact.label}>
@@ -40,6 +42,9 @@ const Contacts = () => {
             </li>
           ))}
         </ul>
+      </address>
+      <address className={`${classes.address} tx-0 t-paragraph`}>
+        Viamão - RS, Brasil
       </address>
       <SocialLinks />
     </section>
