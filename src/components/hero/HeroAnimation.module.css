@@ -3,7 +3,7 @@
   aspect-ratio: 1/1;
   justify-self: center;
   position: relative;
-  z-index: 10;
+  z-index: 4;
   user-select: none;
 }
 

@@ -1,7 +1,7 @@
 .container {
   display: flex;
   gap: var(--sp8);
-  z-index: 30;
+  z-index: 1;
   position: relative;
 }
 

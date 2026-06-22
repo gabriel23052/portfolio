@@ -4,7 +4,7 @@
   align-items: start;
   padding: var(--sp16);
   position: fixed;
-  z-index: 20;
+  z-index: 5;
 }
 
 .container {
