@@ -58,6 +58,12 @@
   }
 }
 
+@media (max-width: 500px) {
+  .wrapper {
+    margin-bottom: var(--sp40);
+  }
+}
+
 @media (max-width: 420px) {
   .wrapper {
     background: url("../assets/images/skills-banner-420.jpg") no-repeat center;

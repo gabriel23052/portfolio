@@ -6,6 +6,7 @@ import Certificates from "./certificates/Certificates";
 import Contacts from "./contacts/Contacts";
 
 import { DarkModeContextProvider } from "../contexts/DarkModeContext";
+import QuickLook from "./QuickLook";
 
 /**
  * Componente pai da aplicação
@@ -16,6 +17,7 @@ const App = () => {
       <Header />
       <Hero />
       <Skills />
+      <QuickLook />
       <Projects />
       <Certificates />
       <Contacts />
@@ -24,4 +26,3 @@ const App = () => {
 };
 
 export default App;
-
