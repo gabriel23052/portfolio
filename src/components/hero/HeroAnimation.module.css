@@ -91,15 +91,15 @@
   content: "_";
   display: inline-block;
   font-weight: 600;
-  translate: -1700%;
+  translate: -1300%;
   animation:
-    moveBlink 1s 1s forwards steps(17),
-    blink 0.5s infinite steps(2, jump-none);
+    moveBlink 1s 1s forwards steps(13),
+    blink 1s infinite steps(2, jump-none);
 }
 
 .command span {
   clip-path: inset(0 100% 0 0);
-  animation: write 1s 1s steps(17) forwards;
+  animation: write 1s 1s steps(13) forwards;
 }
 
 .uiElements {

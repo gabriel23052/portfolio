@@ -14,7 +14,7 @@ const HeroAnimation = () => {
         </div>
         <div className={classes.grid}>
           <div className={classes.command}>
-            <span>build --ui --code</span>
+            <span>npm run build</span>
           </div>
           <div className={classes.uiElements}>
             <div data-index="0"></div>
