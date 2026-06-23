@@ -10,7 +10,7 @@
 }
 .decoration::before {
   content: "";
-  width: 4px;
+  width: 6px;
   height: 100%;
   display: block;
   background-color: #dedede;
@@ -28,7 +28,7 @@ body[data-darkmode="true"] .decoration::before {
   display: block;
   border: 1px solid #dedede;
   border-radius: 0 0 0 32px;
-  border-width: 0 0 4px 4px;
+  border-width: 0 0 6px 6px;
   position: absolute;
   top: 50%;
   left: 0px;
@@ -47,8 +47,11 @@ body[data-darkmode="true"] .decoration::after {
   corner-shape: squircle;
   box-shadow:
     0 0 20px rgb(0 0 0 / 4%),
-    0 0 8px rgb(0 0 0 / 8%);
+    0 0 8px rgb(0 0 0 / 15%);
   z-index: 0; /* Para exibir a decoração de LinkButton */
+}
+.body[data-darkmode="true"] container {
+  box-shadow: 0 0 16px #000;
 }
 .wrapper:nth-child(even) .container {
   width: 97%;
@@ -74,7 +77,7 @@ body[data-darkmode="true"] .decoration::after {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .wrapper {
     grid-template-columns: 1fr;
   }

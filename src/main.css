@@ -112,7 +112,7 @@ html {
   --sp64: 4rem;
   --bg-0: #fafafa;
   --bg-1: #f5f5f5;
-  --bg-2: #f2f2f2;
+  --bg-2: #fcfcfc;
   --tx-0: #666666;
   --tx-1: #595959;
   --tx-2: #1a1a1a;
@@ -157,7 +157,7 @@ body {
 body[data-darkmode="true"] {
   --bg-0: #292929;
   --bg-1: #212121;
-  --bg-2: #1a1a1a;
+  --bg-2: #141414;
   --tx-0: #8c8c8c;
   --tx-1: #b2b2b2;
   --tx-2: #ebebeb;

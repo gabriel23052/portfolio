@@ -4,6 +4,8 @@
   padding: var(--sp12) var(--sp24);
   border-radius: 16px;
   position: relative;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 .container::before {
