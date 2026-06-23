@@ -36,7 +36,12 @@ const Contacts = () => {
           {CONTACTS.map((contact) => (
             <li className={classes.listItem} key={contact.label}>
               <span className="t-small tx-0">{contact.label}</span>
-              <a className="t-contact tx-1" href={contact.link} target="_blank">
+              <a
+                className="t-contact tx-1"
+                href={contact.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {contact.readableFormat}
               </a>
             </li>

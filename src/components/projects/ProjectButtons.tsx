@@ -28,6 +28,7 @@ const ProjectButtons = ({
         className={`t-button-label-1 bg-0 tx-1 ${classes.repoLink}`}
         href={repositoryUrl}
         target="_blank"
+        rel="noopener noreferrer"
       >
         Repositório
         <GithubIcon width={16} height={16} />
@@ -38,6 +39,7 @@ const ProjectButtons = ({
           Icon={DemoIcon}
           href={demoUrl}
           target="_blank"
+          rel="noopener noreferrer"
         >
           Acessar
         </LinkButton>

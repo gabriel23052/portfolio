@@ -21,6 +21,7 @@ const SocialLinks = () => {
               href={link.url}
               title={link.name}
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 src={darkMode ? link.iconUrl.darkMode : link.iconUrl.lightMode}
