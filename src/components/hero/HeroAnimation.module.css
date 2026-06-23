@@ -15,7 +15,10 @@
   position: relative;
   clip-path: inset(0 0 calc(100% - 8rem) 0 round 16px);
   z-index: 3;
-  animation: expandContainer 1s 3.5s forwards;
+  --float-intensity: 1.5;
+  animation:
+    expandContainer 1s 3.5s forwards,
+    float 8s 6.5s infinite;
 }
 
 .shadow {
@@ -30,7 +33,10 @@
   top: 0;
   z-index: 2;
   opacity: 0;
-  animation: backgroundShadow 0.5s 6.5s forwards;
+  --float-intensity: 1.5;
+  animation:
+    backgroundShadow 0.5s 6.5s forwards,
+    float 8s 6.5s infinite;
 }
 
 .macControls {
@@ -267,5 +273,35 @@
 @keyframes backgroundShadow {
   to {
     opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: translate3d(
+      calc(1px * var(--float-intensity)),
+      calc(-3px * var(--float-intensity)),
+      0
+    );
+  }
+
+  50% {
+    transform: translate3d(0, calc(-7px * var(--float-intensity)), 0);
+  }
+
+  75% {
+    transform: translate3d(
+      calc(-1px * var(--float-intensity)),
+      calc(-3px * var(--float-intensity)),
+      0
+    );
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
   }
 }
